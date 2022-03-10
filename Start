@@ -1,2 +1,103 @@
-Blablabla
-aklgklfjgnf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我创建的第一个页面：中国大学MOOC</title>
+    <style type="text/css">
+    .hdbox {
+        background-color: rgb(136, 136, 201);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+    }
+    .div1{
+        background-color:blue;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .div1 div{
+        background-color: orange;
+    }
+    .subdiv1{
+        background-color: aquamarine;
+        margin: 10px;
+        padding:10px;
+    }
+    .detail{
+        color:gray;
+        font-size:smaller;
+    }
+    .pic{
+        height:max-content;
+        width:fit-content;
+    }
+    .div2{
+        background-color: yellow;
+    }
+    .div3{
+        background-color: red;
+    }
+    .div4{
+        background-color: pink;
+    }
+    </style>
+</head>
+<body> <!--一个header，四个div-->
+    <header class="hdbox"><!--flex盒模型-->
+        中国大学MOOC 
+        <div>课程</div>
+        <div>学校</div>
+        <div>慕课堂</div> 
+        <div>下载APP</div> 
+        <div>搜索感兴趣的课程</div>
+        <div>我的学校云</div> 
+        <div>个人中心</div>
+    </header>
+    <div class="div1"><!--flex盒模型-->
+        <div>
+            <div>国家精品</div>
+            <div>计算机<span class="detail">大数据与人工智能/...</span></div>
+            <div>外语<span class="detail">听力/口语/写作/翻译</span></div>
+            <div>理学工学农学<span class="detail">数学/物理/...</span></div>
+            <div>2023考研<span class="detail">数学/英语/政治</span></div>
+            <div>期末不挂科<span class="detail">数学不挂科/物...</span></div>
+            <div>大学应试英语<span class="detail">四六级/考研...</span></div>
+            <div>考编·考证<span class="detail">公务员考试/事业...</span></div>
+            <div>求职就业<span class="detail">互联网求职/数据...</span></div>
+            <div>更多</div>
+        </div>
+        <div class="pic">
+            精美图片
+        </div>
+        <div>
+            免费学习来自名校名师的精品课程</br>
+            登录/注册
+        </div>
+    </div>
+    <div class="div2">
+        全部800所合作高校
+    </div>
+    <div class="div3">
+        <h3>编辑推荐</h3>
+        <div>
+            <div>密码学引论</div>
+            <div>分子生物学</div>
+            <div>化工基础实验</div>
+            <div>Theory and Practice on Improving Immunity Base...</div>
+            <div>信息素养：效率提升与终生学习的新引擎</div>
+        </div>
+    </div>
+    <div class="div4">
+        <h3>本周课程排行</h3>
+        <div class="subdiv1">
+            <div>热门排行</div>
+            <div>新科排行</div>
+            <div>五星评价</div>
+        </div>
+    </div>
+</body>
+</html>
