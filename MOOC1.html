@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我创建的第一个页面：中国大学MOOC</title>
+    <link href="CSS/MOOC.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="background"> <!--一个header，一个aside，四个div-->
+    <header id="hdbox"><!--网页的header-->
+        <img id="hd_img" src="imgs/headline.png" />
+        <div id="hd_div1" class="center">
+            <div class="center">课程<img src="imgs/triangle.png" width=15/></div>
+            <div>学校</div>
+            <div>学校云</div> 
+            <div>慕课堂</div> 
+            <div>下载APP</div> 
+        </div>
+        <div id="hd_srch">
+            <form method="post" action="save.php">
+                <input  type="text" name="myName" placeholder="搜索感兴趣的课程"/>
+            </form>
+            <img src="imgs/search.png">
+        </div>
+        <div style="position:absolute;right:50px;">登录 | 注册</div>
+    </header>
+    <div class="center father_div" id="div1"><!--第一个大模块-->
+        <div id="nation_equality">
+            <div>
+                <div>国家精品</div>
+                <div>计算机&nbsp;<span class="detail">大数据与人工智能/...</span></div>
+                <div>外语&nbsp;<span class="detail">听力/口语/写作/翻译</span></div>
+                <div>理学工学农学&nbsp;<span class="detail">数学/物理/...</span></div>
+                <div>2023考研&nbsp;<span class="detail">数学/英语/政治</span></div>
+                <div>期末不挂科&nbsp;<span class="detail">数学不挂科/物...</span></div>
+                <div>大学应试英语&nbsp;<span class="detail">四六级/考研...</span></div>
+                <div>考编·考证&nbsp;<span class="detail">公务员考试/事业...</span></div>
+                <div>求职就业&nbsp;<span class="detail">互联网求职/数据...</span></div>
+                <div>更多&nbsp;<img src="imgs/arrow_down.png" width="20"/></div>
+            </div>
+        </div>
+        <img class="pic" src="imgs/网易有道春招开启.png" id="div_pic"/>
+        <div id="login">
+            <div>
+                <div>免费学习来自名校名师的</div>
+                <div>精品课程</div>
+                <img src="imgs/profile.png" />
+                <button>登录/注册</button>
+                <div class="detail" id="login_detail">网易和高等教育出版社出品</div>
+            </div>
+        </div>
+    </div>
+    <div class="center father_div" id="universities"><!--第二个大模块-->
+        <div class="center" >
+            <div>全部801所合作高校</div>
+            <img src="imgs/arrow_right.png" width="20">
+        </div>
+        <img src="imgs/北京大学.png" />
+            <img src="imgs/浙江大学.png" />
+            <img src="imgs/南京大学.png" />
+            <img src="imgs/武汉大学.png" />
+            <img src="imgs/哈尔滨工业大学.png" />
+    </div>
+    <div class="father_div"><!--第三个大模块：编辑推荐-->
+        <h3>编辑推荐</h3>
+        <div id="div3">
+            <div>
+                <img src="imgs/recommend_01.webp"><br/>
+                <div>
+                    <b>Error Theory and Data Processing</b>
+                    <small>Beihang University</small>
+                    <span>24人参加</span>
+                    <div>仪器仪表学科的核心基础课！百年未有之大变局</div>
+                </div>
+            </div>
+            <div>
+                <img src="imgs/recommend_02.webp"><br/>
+                <div>
+                    <b>固体废物处理与污染控制</b>
+                    <small>天津大学</small>
+                    <span>791人参加</span>
+                    <div>法律法规是如何“生产”出来的？</div>
+                </div>
+            </div>
+            <div>
+                <img src="imgs/recommend_03.webp"><br/>
+                <div>
+                    <b>立法学</b>
+                    <small>西北大学</small>
+                    <span>24人参加</span>
+                    <div>仪器仪表学科的核心基础课！</div>
+                </div>
+            </div>
+            <div>
+                <img src="imgs/recommend_04.webp"><br/>
+                <div>
+                    <b>近代外交舞台上的中国人</b>
+                    <small>湘潭大学</small>
+                    <span>683人参加</span>
+                    <div>近距离感受“数千年未有之大变局”</div>
+                </div>
+            </div>
+            <div>
+                <img src="imgs/recommend_05.webp"><br/>
+                <div>
+                    <b>侵权责任法</b>
+                    <small>四川大学</small>
+                    <span>634人参加</span>
+                    <div>全方位、多层次领略侵权责任法的精要</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="father_div"><!--第四个大模块：本周课程排行-->
+        <h3>本周课程排行</h3>
+        <div id="div4">
+            <div><!--热门排行-->
+                <div style="display:flex;position:relative;height:60px;">
+                    <h4>热门排行</h4>
+                    <span>TOP50</span>
+                    <b>POPULAR COURSES</b>
+                </div>
+                <div>
+                    <div>
+                        <span style="color:red">1</span>
+                        <img src="imgs/rank_001.png"/>
+                        <div>
+                            <a>Python语言程序设计</a>
+                            <span>北京理工大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:orange">2</span>
+                        <img src="imgs/rank_002.jpg"/>
+                        <div>
+                            <a>程序设计入门——C语言</a>
+                            <span>浙江大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:yellow">3</span>
+                        <img src="imgs/rank_003.jpg"/>
+                        <div>
+                            <a>大学英语自学课程（上）</a>
+                            <span>北京科技大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:gray">4</span>
+                        <img src="imgs/rank_004.png"/>
+                        <div>
+                            <a>运动与健康</a>
+                            <span>湖北大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:gray">5</span>
+                        <img src="imgs/rank_005.jpg"/>
+                        <div>
+                            <a>心理学与生活</a>
+                            <span>南京大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><!--新课排行-->
+                <div style="display:flex;position:relative;height:60px;">
+                    <h4>新课排行</h4>
+                    <b>NEW COURSES</b>
+                </div>
+                <div>
+                    <div>
+                        <span style="color:red">1</span>
+                        <img src="imgs/rank_006.png"/>
+                        <div>
+                            <a>你、我，我们——人际交往心理学</a>
+                            <span>北京联合大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:orange">2</span>
+                        <img src="imgs/rank_007.jpg"/>
+                        <div>
+                            <a>营养与健康</a>
+                            <span>南京大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:yellow">3</span>
+                        <img src="imgs/rank_008.jpg"/>
+                        <div>
+                            <a>形势与政策</a>
+                            <span>南京师范大学</span>
+                            <small class="detail">6859人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:gray">5</span>
+                        <img src="imgs/rank_009.jpg"/>
+                        <div>
+                            <a>钢琴基础</a>
+                            <span>首都师范大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:gray">4</span>
+                        <img src="imgs/rank_010.jpg"/>
+                        <div>
+                            <a>基础德语</a>
+                            <span>上海交通大学</span>
+                            <small class="detail">3602人参加</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><!--五星评价-->
+                <div style="display:flex;position:relative;height:60px;">
+                    <h4>五星评价</h4>
+                    <span>TOP50</span>
+                    <b>FIVE-STAR</b>
+                </div>
+                <div>
+                    <div>
+                        <span style="color:red">1</span>
+                        <img src="imgs/rank_011.png"/>
+                        <div>
+                            <a>Python语言程序设计</a>
+                            <span>北京理工大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:orange">2</span>
+                        <img src="imgs/rank_012.png"/>
+                        <div>
+                            <a>猴博士大会员</a>
+                            <span></span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:yellow">3</span>
+                        <img src="imgs/rank_013.jpg"/>
+                        <div>
+                            <a>形势与政策</a>
+                            <span>北京科技大学</span>
+                            <small class="detail">78159人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:gray">4</span>
+                        <img src="imgs/rank_014.jpg"/>
+                        <div>
+                            <a>品牌管理</a>
+                            <span>中南财经政法大学</span>
+                            <small class="detail">3776人参加</small>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color:gray">5</span>
+                        <img src="imgs/rank_015.jpg"/>
+                        <div>
+                            <a>大学公共体育</a>
+                            <span>华南理工大学</span>
+                            <small class="detail">10010人参加</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside> 
+        <img src="imgs/aside.jpg"/>
+    </aside>
+</body>
+</html>
