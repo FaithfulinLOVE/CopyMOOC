@@ -8,14 +8,14 @@
     <link href="CSS/MOOC.css" rel="stylesheet" type="text/css" />
 </head>
 <body id="background"> <!--一个header，一个aside，四个div-->
-    <header id="hdbox"><!--网页的header-->
-        <img id="hd_img" src="imgs/headline.png" />
+    <header id="hdbox" class="select1"><!--网页的header-->
+        <a href="file:///C:/Users/FaithfulinLOVE/learngit/MyMOOC/MOOC1.html"><img id="hd_img" src="imgs/headline.png" /></a>
         <div id="hd_div1" class="center">
-            <div class="center">课程<img src="imgs/triangle.png" width=15/></div>
-            <div>学校</div>
-            <div>学校云</div> 
-            <div>慕课堂</div> 
-            <div>下载APP</div> 
+            <div class="center"><a href="#">课程</a><img src="imgs/triangle.png" width=15/></div>
+            <a href="https://www.icourse163.org/university/view/all.htm#/">学校</a>
+            <a href="https://www.icourse163.org/spoc/schoolcloud/index.htm" target="_blank">学校云</a> 
+            <a href="https://www.icourse163.org/mooc/main/classroom" target="_blank">慕课堂</a> 
+            <a href="https://www.icourse163.org/mobile.htm?from=navibar&mobiletopbar=hidden#/mobile" target="_blank">下载APP</a> 
         </div>
         <div id="hd_srch">
             <form method="post" action="save.php">
@@ -23,45 +23,77 @@
             </form>
             <img src="imgs/search.png">
         </div>
-        <div style="position:absolute;right:50px;">登录 | 注册</div>
+        <a href="#" style="position:absolute;right:50px;">登录 | 注册</a>
     </header>
-    <div class="center father_div" id="div1"><!--第一个大模块-->
-        <div id="nation_equality">
-            <div>
-                <div>国家精品</div>
-                <div>计算机&nbsp;<span class="detail">大数据与人工智能/...</span></div>
-                <div>外语&nbsp;<span class="detail">听力/口语/写作/翻译</span></div>
-                <div>理学工学农学&nbsp;<span class="detail">数学/物理/...</span></div>
-                <div>2023考研&nbsp;<span class="detail">数学/英语/政治</span></div>
-                <div>期末不挂科&nbsp;<span class="detail">数学不挂科/物...</span></div>
-                <div>大学应试英语&nbsp;<span class="detail">四六级/考研...</span></div>
-                <div>考编·考证&nbsp;<span class="detail">公务员考试/事业...</span></div>
-                <div>求职就业&nbsp;<span class="detail">互联网求职/数据...</span></div>
-                <div>更多&nbsp;<img src="imgs/arrow_down.png" width="20"/></div>
+    <nav class="father_div">
+        <div class="center" id="div1"><!--第一个大模块-->
+            <div id="nation_equality">
+                <div>
+                    <div><a href="https://www.icourse163.org/channel/2001.htm" target="_blank">国家精品</a></div>
+                    <div>
+                        <a href="https://www.icourse163.org/channel/3002.htm" target="_blank">计算机</a>&nbsp;
+                        <a href="https://www.icourse163.org/channel/3002.htm?cate=1001056001" target="_blank" class="detail">大数据与人工智能</a>
+                        <span class="detail">/...</span>
+                    </div>
+                    <div>
+                        <a href="https://www.icourse163.org/channel/2002.htm" target="_blank">外语</a>&nbsp;
+                        <a href="https://www.icourse163.org/channel/2002.htm?cate=1001059001" target="_blank" class="detail">听力/口语</a>
+                        <span class="detail">/</span>
+                        <a href="https://www.icourse163.org/channel/2002.htm?cate=1001080002" target="_blank" class="detail">写作/翻译</a>
+                    </div>
+                    <div>
+                        <a href="https://www.icourse163.org/channel/3003.htm" target="_blank">理学工学农学</a>&nbsp;
+                        <a href="https://www.icourse163.org/channel/3003.htm?cate=1001043057" target="_blank" class="detail">数学</a>
+                        <span class="detail">/</span>
+                        <a href="https://www.icourse163.org/channel/3003.htm?cate=1001043058" target="_blank" class="detail">物理</a>
+                        <span class="detail">/...</span>
+                    </div>
+                    <div>
+                        <a href="" target="_blank">2023考研</a>&nbsp;
+                        <span class="detail">数学/英语/政治</span>
+                    </div>
+                    <div>
+                        <a href="" target="_blank">期末不挂科</a>&nbsp;
+                        <span class="detail">数学不挂科/物...</span>
+                    </div>
+                    <div>
+                        <a href="" target="_blank">大学应试英语</a>&nbsp;
+                        <span class="detail">四六级/考研...</span>
+                    </div>
+                    <div>
+                        <a href="" target="_blank">考编·考证</a>&nbsp;
+                        <span class="detail">公务员考试/事业...</span>
+                    </div>
+                    <div>
+                        <a href="" target="_blank">求职就业</a>&nbsp;
+                        <span class="detail">互联网求职/数据...</span>
+                    </div>
+                    <div>更多&nbsp;<img src="imgs/arrow_down.png" style="width:20px;"/></div>
+                </div>
+            </div>
+            <img class="pic" src="imgs/网易有道春招开启.png" id="div_pic"/>
+            <div id="login">
+                <div>
+                    <div>免费学习来自名校名师的</div>
+                    <div>精品课程</div>
+                    <img src="imgs/profile.png" />
+                    <button>登录/注册</button>
+                    <div class="detail" id="login_detail">网易和高等教育出版社出品</div>
+                </div>
             </div>
         </div>
-        <img class="pic" src="imgs/网易有道春招开启.png" id="div_pic"/>
-        <div id="login">
-            <div>
-                <div>免费学习来自名校名师的</div>
-                <div>精品课程</div>
-                <img src="imgs/profile.png" />
-                <button>登录/注册</button>
-                <div class="detail" id="login_detail">网易和高等教育出版社出品</div>
+        <div class="center" id="universities"><!--第二个大模块-->
+            <div class="center" >
+                <div>全部801所合作高校</div>
+                <img src="imgs/arrow_right.png" width="20">
             </div>
+            <img src="imgs/北京大学.png" />
+                <img src="imgs/浙江大学.png" />
+                <img src="imgs/南京大学.png" />
+                <img src="imgs/武汉大学.png" />
+                <img src="imgs/哈尔滨工业大学.png" />
         </div>
-    </div>
-    <div class="center father_div" id="universities"><!--第二个大模块-->
-        <div class="center" >
-            <div>全部801所合作高校</div>
-            <img src="imgs/arrow_right.png" width="20">
-        </div>
-        <img src="imgs/北京大学.png" />
-            <img src="imgs/浙江大学.png" />
-            <img src="imgs/南京大学.png" />
-            <img src="imgs/武汉大学.png" />
-            <img src="imgs/哈尔滨工业大学.png" />
-    </div>
+    </nav>
     <div class="father_div"><!--第三个大模块：编辑推荐-->
         <h3>编辑推荐</h3>
         <div id="div3">
@@ -280,6 +312,18 @@
     </div>
     <aside> 
         <img src="imgs/aside.jpg"/>
+        <div id="walk_together">同道计划</div>
+        <div>  
+            <a href="https://www.icourse163.org/about/contactus.htm#/contactus?type=4"
+            target="_blank">
+                <img src="imgs/download_b.png"/>
+                <div>反馈</div>
+            </a>
+            <a href="#">
+                <img src="imgs/feedback_b.png"/>
+                <div>下载</div>
+            </a>
+        </div>  
     </aside>
 </body>
 </html>
